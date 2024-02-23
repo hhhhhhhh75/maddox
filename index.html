@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="loadMainPhotos();">
+
+<nav id="nav">
+	<a id="logo" style="padding:0;margin:25px;display:flex;justify-content:center;" href="index.html"><p>Maddox Sawatzky</p></a>
+
+	<div id="main-menu">
+		<a class="main-links" href="about.html">About</a>
+		<a class="main-links" href="contact.html">Contact</a>
+		<a class="main-links" style="padding:0;margin-bottom:21px;" href="https://www.instagram.com/msawatzky_photography/" target="_blank"><i class="fa" style="font-size:27px;">&#xf16d;</i></a>
+		<a class="hamburger" onclick="toggleMenuOn()"><span class="material-symbols-outlined" style="font-size:31px;">menu</span></a>
+	</div>
+	
+	<div id="side-menu">
+		<a class="hamburger" onclick="toggleMenuOff()"><span style="color:black;font-size:30px;" class="material-symbols-outlined">close</span></a>
+		<a href="about.html">about</a>
+		<a href="contact.html">contact</a>
+		<hr width=82%>
+		<a style="padding:0;margin-bottom:21px;" href="https://www.instagram.com/msawatzky_photography/" target="_blank">instagram</a>
+		</div>
+</nav>
+<div id="main-content">
+<div class="photos-wrapper" id="photos-container" >
+	<!-- <ul id="totalList"> -->
+		<div class="photos-column">
+			<!--<li>--><!--</li>-->
+			<!--<li>--><img onclick="lightboxMainImage(this)" id="transition-image" class="photos" src="images/JPEG/JPEG/JPEG/JPEG/0A675E3B-9559-461C-A06A-8B47EAD98B93_1_100_o.jpg"><!--</li>-->
+			<!--<li>--><img onclick="lightboxMainImage(this)" id="transition-image" class="photos" src="images/JPEG/JPEG/JPEG/JPEG/2G5A2764.jpg"><!--</li>-->
+					   <img onclick="lightboxMainImage(this)" id="transition-image" class="photos" src="images/JPEG/JPEG/JPEG/JPEG/0AC1E686-9DB2-4564-9FC0-BCC5763E0AAE_1_100_o.jpg">
+		</div>
+		
+		<div class="photos-column">
+			<!--<li>--><img onclick="lightboxMainImage(this)" id="transition-image" class="photos" src="images/swan.jpeg"><!--</li>-->
+			<!--<li>--><img onclick="lightboxMainImage(this)" id="transition-image" class="photos" src="images/leaf.jfif"><!--</li>-->
+			<!--<li>--><img onclick="lightboxMainImage(this)" id="transition-image" class="photos" src="images/owl2.jpeg"><!--</li>-->
+		</div>
+		
+		<div class="photos-column">
+			<!--<li>--><img  onclick="lightboxMainImage(this)" id="transition-image" class="photos" src="images/duck2.jfif"><!--</li>-->
+			<!--<li>--><img  onclick="lightboxMainImage(this)" id="transition-image" class="photos" src="images/duck3.jpeg"><!--</li>-->
+			<!--<li>--><img  onclick="lightboxMainImage(this)" id="transition-image" class="photos" src="images/cateye.jfif"><!--</li>-->
+			<!--<li>--><img  onclick="lightboxMainImage(this)" id="transition-image" class="photos" src="images/owl3.jfif"><!--</li>-->
+		</div>
+		
+	</ul>
+</div>
+
+<div id="lightbox">
+	<img id="lightbox-image" class="lightbox-image fadeIn" src="images/duck2.jfif">
+	<button class="lightbox-button" onclick="closeLightbox()" style="z-index:10;width:1px;height:1px;top:0;right:0;position:absolute;padding:54px;margin:0;margin-top:3px;display:flex;align-items:center;justify-content:flex-start;"><span style="color:white;font-size:30px;" class="material-symbols-outlined">close</span></button>
+
+</div>
+<div style="width:100%;" id="lightbox-buttons">
+	<button class="lightbox-button" style="left:0;" onclick="nextImage(-1);"><span style="position:absolute; width:20px;font-size:35px;" class="material-symbols-outlined left">navigate_before</span></button>
+	<button class="lightbox-button" style="right:0;" onclick="nextImage(1)"><span style="position:absolute; width:20px;font-size:35px;margin-right:15px;" class="material-symbols-outlined right">navigate_next</span></button>
+	</div>
+</div>
+
+<script src="script.js">
+
+</script>
+</body>
+</html>

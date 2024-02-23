@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+</head>
+<body>
+
+<nav>
+	<a style="padding:0;margin:25px;display:flex;justify-content:center;" href="index.html"><img src="images/mslogo.png" height=50px></a>
+
+	<div id="main-menu">
+		<a class="main-links" href="about.html">about</a>
+		<a class="main-links" href="contact.html">contact</a>
+		<a class="main-links" style="padding:0;margin-bottom:21px;" href="https://www.instagram.com/msawatzky_photography/" target="_blank"><img src="images/instagram.png" height=30px;></a>
+		<a class="hamburger" onclick="toggleMenuOn()"><img src="images/menu.png" height=25px;></a>
+	</div>
+	
+	<div id="side-menu">
+		<a class="hamburger" onclick="toggleMenuOff()"><img src="images/menu2.png" height=30px;></a>
+		<a href="about.html">about</a>
+		<a href="contact.html">contact</a>
+		<hr width=82%>
+		<a style="padding:0;margin-bottom:21px;" href="https://www.instagram.com/msawatzky_photography/" target="_blank">instagram</a>
+		</div>
+</nav>
+
+<div class="contact-info-wrapper">
+	<div class="contact-info">
+		<form action="contact.php" method="post">
+			<label for="email" style="padding-top:0;">Email:</label>
+			<input name="email" id="email" placeholder="johndoe@website.ca"></input>
+				
+			<label for="fname">First Name:</label>
+			<input  id="fname" name="fname" placeholder="John" ></input>
+				
+			<label for="lname">Last Name:</label>
+			<input  name="lname" id="lname"placeholder="Doe" ></input>
+				
+			<label for="phone">Phone Number:</label>
+			<input id="phone" name="phone" placeholder="123-456-7890"></input>
+				
+			<label for="content">Message:</label>
+			<textarea  id="content" name="content" placeholder="Type your question or concern here..." rows="5"></textarea>
+				
+			<input id="submit" name="submit" type="submit" value="Submit" style="margin-top:30px;background-color:white;color:black;"></input>
+		<form>
+	</div>
+</div>
+
+<div style="display:flex; justify-content:center; align-items:center; width:200px;margin:50px;">
+<h2>or</h2>
+<p>feel free to message me on me instagram page</p>
+
+</div>
+<script src="script.js"></script>		
+</body>
+</html>
