@@ -2,27 +2,33 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body onload="fadeIn();">
 
-<nav>
-	<a style="padding:0;margin:25px;display:flex;justify-content:center;" href="index.html"><img src="images/mslogo.png" height=50px></a>
+<nav id="nav">
+	<a id="logo" style="padding:0;margin:25px;display:flex;justify-content:center;" href="index.html"><p>Maddox Sawatzky</p></a>
 
 	<div id="main-menu">
-		<a class="main-links" href="about.html">about</a>
-		<a class="main-links" href="contact.html">contact</a>
-		<a class="main-links" style="padding:0;margin-bottom:21px;" href="https://www.instagram.com/msawatzky_photography/" target="_blank"><img src="images/instagram.png" height=30px;></a>
-		<a class="hamburger" onclick="toggleMenuOn()"><img src="images/menu.png" height=25px;></a>
+		<a class="main-links" href="about.html">About</a>
+		<a class="main-links" href="contact.html">Contact</a>
+		<a class="main-links" style="padding:0;margin-bottom:21px;" href="https://www.instagram.com/msawatzky_photography/" target="_blank"><i class="fa" style="font-size:27px;">&#xf16d;</i></a>
+		<a class="hamburger" onclick="toggleMenuOn()"><span class="material-symbols-outlined" style="font-size:31px;">menu</span></a>
 	</div>
 	
 	<div id="side-menu">
-		<a class="hamburger" onclick="toggleMenuOff()"><img src="images/menu2.png" height=30px;></a>
-		<a href="about.html">about</a>
-		<a href="contact.html">contact</a>
+		<a class="hamburger" onclick="toggleMenuOff()"><span style="color:black;font-size:30px;" class="material-symbols-outlined">close</span></a>
+		<a href="index.html">Home</a>
+		<a href="about.html">About</a>
+		<a href="contact.html">Contact</a>
 		<hr width=82%>
-		<a style="padding:0;margin-bottom:21px;" href="https://www.instagram.com/msawatzky_photography/" target="_blank">instagram</a>
+		<a style="padding:0;margin-bottom:21px;" href="https://www.instagram.com/msawatzky_photography/" target="_blank">Instagram</a>
 		</div>
 </nav>
+<div id="main-content">
+</div>
 
 <div class="about-wrapper">
 	<div class="about-text" style="">

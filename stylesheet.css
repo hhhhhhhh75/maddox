@@ -43,6 +43,7 @@ p{
 	display:flex;
 	flex-direction:column;
 	align-items:center;
+	justify-content:center;
 	margin:30px;
 }
 
@@ -172,6 +173,8 @@ nav {
 
 .contact-info-wrapper{
 	margin:30px;
+	margin-top:90px;
+	height:calc(100vh - 120px);
 }
 
 .logo img{
@@ -184,11 +187,11 @@ nav {
 }
 
 ::placeholder,input,label{
-	font-size:14px;
+	font-size:19px;
 }
 
 a {
-	font-size:4vh;
+	font-size:3vh;
 }
 
 h2{
@@ -200,9 +203,17 @@ h1 {
 	font-size:30px;
 	
 }
+#logo p {
+	
+	font-size:20px;
+}
 
 p {
 	font-size:16px;
+	
+}
+.about-wrapper {
+	margin-top:60px;
 	
 }
 
@@ -324,7 +335,7 @@ li {
 	height:100vh;
 	width:100%;
 	background-color:white;
-	margin-top:93vh;
+	margin-top:91.5vh;
 	align-items:flex-end;
 	z-index:10;
 	filter:invert(0);
