@@ -156,8 +156,8 @@ nav {
 	position:fixed;
 }
 
-#main-content {
-	margin-top:48px;
+#photos-container {
+	margin-top:60px;
 }
 
 .hamburger {
@@ -234,7 +234,7 @@ body {
 
 #lightbox {
 
-	height:calc(100% - 48px);
+	height:calc(100% - 60px);
 	transition:all 1s;
 	width:100%;
 	display:flex;
@@ -243,7 +243,7 @@ body {
 	position:absolute;
 }
 .lightbox-button {
-	height:calc(100% - 108px);
+	height:100%;
 }
 
 

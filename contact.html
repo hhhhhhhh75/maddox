@@ -32,26 +32,21 @@
 
 <div class="contact-info-wrapper">
 	<div class="contact-info">
-		<form action="contact.php" method="post">
-			<label for="email" style="padding-top:0;">Email:</label>
-			<input name="email" id="email" placeholder="johndoe@website.ca"></input>
-				
-			<label for="fname">First Name:</label>
-			<input  id="fname" name="fname" placeholder="John" ></input>
-				
-			<label for="lname">Last Name:</label>
-			<input  name="lname" id="lname"placeholder="Doe" ></input>
-				
-			<label for="phone">Phone Number:</label>
-			<input id="phone" name="phone" placeholder="123-456-7890"></input>
-				
-			<label for="content">Message:</label>
-			<textarea  id="content" name="content" placeholder="Type your question or concern here..." rows="5"></textarea>
-				
-			<input id="submit" name="submit" type="submit" value="Submit" style="margin-top:30px;background-color:white;color:black;"></input>
-		<form>
+		<form id="fs-frm" accept-charset="utf-8" action="https://formspree.io/f/xdoqzzzq" method="POST">
+    <label for="full-name">Full Name</label>
+    <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+    <label for="email-address">Email Address</label>
+    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+    <label for="message">Message</label>
+    <textarea rows="5" name="message" id="message" placeholder="Type your question or concern here..." required=""></textarea>
+    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+	<input type="submit" value="Submit" style="margin-top:30px;" >
+</form>
 	</div>
+	
+
 </div>
+
 
 
 <script src="script.js"></script>		
