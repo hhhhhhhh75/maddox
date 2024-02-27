@@ -3,7 +3,9 @@ function toggleMenuOn(){
 	document.getElementById("main-menu").style.display="none";
 	document.getElementById("logo").style.display="none";
 	document.getElementById("main-content").style.display="none";
-	document.getElementById("nav").style.filter="invert(1)";
+	document.getElementById("side-menu").style.backgroundColor="white";
+	
+	//document.getElementById("side-menu").style.width="100%";
 }
 
 function toggleMenuOff(){
@@ -11,7 +13,10 @@ function toggleMenuOff(){
 	document.getElementById("main-menu").style.display="flex";
 	document.getElementById("logo").style.display="flex";
 	document.getElementById("main-content").style.display="flex";
-	document.getElementById("nav").style.filter="invert(0)";
+	document.getElementById("side-menu").style.backgroundColor="grey";
+	document.getElementById("main-menu").style.height="60px";
+	
+	
 }
 
 function lightboxMainImage(img){
@@ -41,10 +46,7 @@ function loadMainPhotos(){
 	for (let i = 1; i < listItems.length; i++){
 		listItems[i].setAttribute("id", "transition-image");
 		listItems[i - 1].setAttribute("id", "");
-	
 	}
-	
-	
 }
 
 
