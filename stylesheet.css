@@ -463,6 +463,10 @@ align-items:center;
 box-shadow: none;
 }
 
+.lightbox-button:active {
+background-color:transparent; 
+}
+
 .fadeIn {
 	opacity: 1;
 	animation: fadein 0.5s linear;
