@@ -232,7 +232,7 @@ body {
 }
 
 #lightbox {
-
+	margin-top:60px;
 	height:calc(100% - 60px);
 	transition:all 1s;
 	width:100%;
@@ -450,16 +450,17 @@ font-size:26px;
 }
 
 .lightbox-button {
+margin-top:60px;
 width:50%; 
 position:absolute; 
-height:calc(100% - 75px); 
+height:calc(100% - 60px); 
 z-index:2; 
 background-color:transparent; 
 border:none; 
 color:white;
 display:flex;
 align-items:center;
-
+box-shadow: none;
 }
 
 .fadeIn {
