@@ -455,7 +455,7 @@ width:50%;
 position:absolute; 
 height:calc(100% - 60px); 
 z-index:2; 
-background-color:transparent; 
+background-color:rgba(0,0,0,0);
 border:none; 
 color:white;
 display:flex;
@@ -463,9 +463,10 @@ align-items:center;
 box-shadow: none;
 }
 
-.lightbox-button:active {
-background-color:transparent; 
+.lightbox-button:active, .lightbox-button:focus {
+	background-color:rgba(0,0,0,0);
 }
+
 
 .fadeIn {
 	opacity: 1;
