@@ -464,7 +464,7 @@ box-shadow: none;
 }
 
 .lightbox-button:active, .lightbox-button:focus {
-	background-color:rgba(0,0,0,0);
+	background-color:grey;
 }
 
 
