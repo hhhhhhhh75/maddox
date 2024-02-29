@@ -455,7 +455,7 @@ width:50%;
 position:absolute; 
 height:calc(100% - 60px); 
 z-index:2; 
-background-color:rgba(0,0,0,0);
+background-color:grey;
 border:none; 
 color:white;
 display:flex;
