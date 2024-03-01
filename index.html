@@ -10,7 +10,11 @@
 <meta name="keywords" content="cars, photography, birds, photographer, maddox%20sawatzky, photos, cancucks">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body onload="loadMainPhotos();">
+
+<body onload="loadMainPhotos();" onwheel="hideNav(event);">
+<script src="script.js">
+
+</script>
 
 <nav id="nav">
 	<a id="logo" style="padding:0;margin:25px;display:flex;justify-content:center;" href="index.html"><p>Maddox Sawatzky</p></a>
@@ -23,14 +27,14 @@
 	</div>
 	
 	<div id="side-menu">
-		<a class="hamburger" onclick="toggleMenuOff()"><span style="color:black;font-size:30px;" class="material-symbols-outlined">close</span></a>
+		<a class="hamburger" onclick="toggleMenuOff()" style="position: absolute;top: -8px;right: -1px;"><span style="color:black;font-size:30px;" class="material-symbols-outlined">close</span></a>
 		<a href="index.html">Home</a>
 		<a href="about.html">About</a>
 		<a href="contact.html">Contact</a>
 		<a style="padding:0;margin-bottom:21px;" href="https://www.instagram.com/msawatzky_photography/" target="_blank">Instagram</a>
 		</div>
 </nav>
-<div id="main-content">
+<div id="main-content" >
 <div class="photos-wrapper" id="photos-container" >
 	<!-- <ul id="totalList"> -->
 		<div class="photos-column">
@@ -242,5 +246,5 @@
 <script src="script.js">
 
 </script>
-</body>
+</body >
 </html>
