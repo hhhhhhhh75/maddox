@@ -13,7 +13,10 @@ nav{
 	justify-content:space-between;
 	align-items:center;
 	transition: all 0.5s;
-
+	position:fixed;
+	top:0px;
+	z-index:2;
+	width:100%;
 }
 
 img {
@@ -161,6 +164,7 @@ nav {
 
 .hamburger {
 	display:flex;
+    
 }
 .main-links{
 	display:none;
@@ -274,6 +278,9 @@ font-size:26px;
 	
 	
 }
+#photos-container {
+	margin-top:75px;
+}
 	
 	.right  {
  right:75px;
@@ -300,8 +307,10 @@ font-size:26px;
 #side-menu {
 	display:none;
 }
+
 #lightbox{
 	height:calc(100% - 75px);
+	padding-top:75px;
 	transition:all 1s;
 	width:100%;
 	display:flex;
@@ -340,10 +349,11 @@ font-size:26px;
 	height:100vh;
 	width:100%;
 	background-color:white;
-	margin-top:91.5vh;
+	margin-top:93vh;
 	align-items:flex-end;
 	z-index:10;
-	
+	align-items: center;
+    justify-content: center;
 	
 }
 
@@ -455,7 +465,7 @@ width:50%;
 position:absolute; 
 height:calc(100% - 60px); 
 z-index:2; 
-background-color:grey;
+background-color:rgba(0,0,0,0);
 border:none; 
 color:white;
 display:flex;
@@ -464,7 +474,7 @@ box-shadow: none;
 }
 
 .lightbox-button:active, .lightbox-button:focus {
-	background-color:grey;
+	background-color:rgba(0,0,0,0);
 }
 
 
