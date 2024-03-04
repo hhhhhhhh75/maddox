@@ -482,6 +482,8 @@ font-size:26px;
 }
 
 .lightbox-button {
+cursor: not-allowed;
+pointer-events: none;
 margin-top:60px;
 width:50%; 
 position:absolute; 
