@@ -270,6 +270,20 @@ li {
  font-size:30px;
 }
 
+#right {
+	padding:50px;
+	padding-right:25px;
+	right:0px;
+}
+#left {
+	padding:50px;
+	padding-left:25px;
+	left:0px;
+}	
+#x {
+	margin-top:0px;
+}
+
 }
 
 @media only screen and (min-width: 801px){
@@ -293,8 +307,8 @@ font-size:26px;
 }
 
 #lightbox button {
-	margin-right:100px;
-	
+	margin-right:60px;
+	margin-top:75px;
 }
 	
 .hamburger {
@@ -382,9 +396,17 @@ font-size:26px;
 	width:100%;
 	padding:10px 30px 20px 30px;
 }
+
+}
+
+
 }
 
 @media only screen and (min-width: 801px) {
+#x{
+	margin-top:0px;
+	right:75px;
+}
 .photos-column {
 	width:50%;
 }

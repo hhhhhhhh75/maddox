@@ -24,6 +24,13 @@ function lightboxMainImage(img){
 	document.getElementById("photos-container").style.display="none";
 	document.getElementById("lightbox-buttons").style.display="flex";
 	document.getElementById("nav").style.marginTop ="0";
+	if (parseInt(document.documentElement.clientWidth) <= 801) {
+		
+		document.getElementById("right").setAttribute("onclick","nextImage(1);");
+		document.getElementById("left").setAttribute("onclick","nextImage(-1);");
+		document.getElementById("button-left").setAttribute("onclick","");
+		document.getElementById("button-right").setAttribute("onclick","");
+	}
 }
 
 function closeLightbox(){
