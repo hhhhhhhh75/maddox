@@ -28,8 +28,8 @@ function lightboxMainImage(img){
 		
 		document.getElementById("right").setAttribute("onclick","nextImage(1);");
 		document.getElementById("left").setAttribute("onclick","nextImage(-1);");
-		document.getElementById("button-left").setAttribute("onclick","");
-		document.getElementById("button-right").setAttribute("onclick","");
+		document.getElementById("button-left").removeAttribute("onclick");
+		document.getElementById("button-right").removeAttribute("onclick");
 	}
 }
 
