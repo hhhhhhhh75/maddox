@@ -25,7 +25,8 @@ function lightboxMainImage(img){
 	document.getElementById("lightbox-buttons").style.display="flex";
 	document.getElementById("nav").style.marginTop ="0";
 	if (parseInt(document.documentElement.clientWidth) <= 801) {
-		
+		document.getElementById("button-left").disabled = true;
+		document.getElementById("button-right").disabled = true;
 		document.getElementById("right").setAttribute("onclick","nextImage(1);");
 		document.getElementById("left").setAttribute("onclick","nextImage(-1);");
 		document.getElementById("button-left").removeAttribute("onclick");
@@ -52,6 +53,42 @@ function loadMainPhotos(){
 		listItems[i].setAttribute("id", "transition-image");
 		listItems[i - 1].setAttribute("id", "");
 	}
+}
+
+function lazyLoadPhotos(){
+	const lazyImages = document.querySelectorAll('#transition-image');
+	
+	const options = {
+  root: null, // Use the viewport as the root
+  rootMargin: "0px",
+  threshold: 0.1 // Specify the threshold for intersection
+};
+
+const handleIntersection = (entries, observer) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      const img = entry.target;
+      const src = img.getAttribute("data-src");
+
+      // Replace the placeholder with the actual image source
+       
+	  img.id ="";
+
+      // Stop observing the image
+      observer.unobserve(img);
+    }
+  });
+};
+
+const observer = new IntersectionObserver(handleIntersection, options);
+
+lazyImages.forEach((image) => {
+  observer.observe(image);
+});
+
+	
+	
 }
 
 
