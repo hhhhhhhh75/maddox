@@ -403,11 +403,6 @@ font-size:26px;
 	
 }
 
-@media only screen and (max-width: 800px) {
-.photos-column {
-	width:100%;
-}
-}
 
 @media only screen and (max-width: 1000px) {
 .about-wrapper img {
@@ -428,15 +423,14 @@ font-size:26px;
 	width:100%;
 	padding:10px 30px 20px 30px;
 }
-
 .photos-column {
-	width:100%;
+	width:40%;
 }
 
 }
 
 
-}
+
 
 @media only screen and (min-width: 801px) {
 #x{
@@ -444,7 +438,7 @@ font-size:26px;
 	right:75px;
 }
 .photos-column {
-	width:50%;
+	width:25%;
 }
 
 .right  {
@@ -463,9 +457,15 @@ font-size:26px;
 }
 }
 
+@media only screen and (max-width: 700px) {
+	.photos-column {
+	width:100%;
+}
+}
+
 @media only screen and (min-width: 1100px) {
 .photos-column {
-	width:25%;
+	width:20%;
 	flex-grow:0;
 }
 
