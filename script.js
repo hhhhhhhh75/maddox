@@ -72,7 +72,8 @@ const handleIntersection = (entries, observer) => {
       const src = img.getAttribute("data-src");
 
       // Replace the placeholder with the actual image source
-       
+      
+	  img.src = src;
 	  img.id ="";
 
       // Stop observing the image
