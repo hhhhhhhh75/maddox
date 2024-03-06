@@ -23,10 +23,9 @@ function lightboxMainImage(img){
 	document.getElementById("lightbox").style.display="flex";
 	document.getElementById("photos-container").style.display="none";
 	document.getElementById("lightbox-buttons").style.display="flex";
-	document.getElementById("nav").style.marginTop ="0";
+	document.getElementById("nav").style.marginTop = "-75px";
 	if (parseInt(document.documentElement.clientWidth) <= 801) {
-		document.getElementById("button-left").disabled = true;
-		document.getElementById("button-right").disabled = true;
+		
 		document.getElementById("right").setAttribute("onclick","nextImage(1);");
 		document.getElementById("left").setAttribute("onclick","nextImage(-1);");
 		document.getElementById("button-left").removeAttribute("onclick");
@@ -38,6 +37,7 @@ function closeLightbox(){
 	document.getElementById("lightbox-buttons").style.display="none";
 	document.getElementById("lightbox").style.display="none";
 	document.getElementById("photos-container").style.display="flex";
+	document.getElementById("nav").style.marginTop = "0px";
 }
 
 function fadeIn(){
@@ -72,7 +72,7 @@ const handleIntersection = (entries, observer) => {
       const src = img.getAttribute("data-src");
 
       // Replace the placeholder with the actual image source
-      	  img.id ="";
+      img.id ="";
 
 
       // Stop observing the image
@@ -135,7 +135,7 @@ function nextImage(val) {
 function hideNav(event){
 	var y = event.deltaY;
 	if (document.getElementById("lightbox").style.display==="flex"){
-		document.getElementById("nav").style.marginTop = "0px";
+		document.getElementById("nav").style.marginTop = "-75px";
 	}
 	else {
 	if (y >= 0){
