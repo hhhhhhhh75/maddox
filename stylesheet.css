@@ -2,12 +2,12 @@
 
 body{
 	margin:0;
-	background-color:#4f4f4f;
+	background-color:#302c2c;
 }
 
 nav{
 	color:black;
-	background-color:#4f4f4f;
+	background-color:#302c2c;
 	height:75px;
 	display:flex;
 	justify-content:space-between;
