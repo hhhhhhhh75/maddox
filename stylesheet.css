@@ -247,6 +247,7 @@ body {
 	height:auto;
 	max-width:1200px;
 	aspect-ratio:auto;
+
 }
 
 #lightbox {
@@ -329,7 +330,7 @@ li {
 
 #right {
 	right:0px;
-	height:100%;
+	height: calc(100% - 200px);
 	width:calc(50% - 150px);
 	padding:0px 75px 0px 75px;
 	display:flex;
@@ -377,7 +378,8 @@ font-size:26px;
 
 #lightbox{
 	height:calc(100vh);
-	
+	position:fixed;
+	top:0;
 	transition:all 1s;
 	width:100%;
 	display:flex;
@@ -388,7 +390,9 @@ font-size:26px;
 }
 
 #lightbox-image{
+	position:relative;
     height:calc(100vh - 100px);
+	z-index:4;
 }
 
 #totalList {

@@ -21,9 +21,12 @@ function lightboxMainImage(img){
 	let source = document.getElementById("lightbox-image");
 	source.src=name;
 	document.getElementById("lightbox").style.display="flex";
-	document.getElementById("photos-container").style.display="none";
-	document.getElementById("lightbox-buttons").style.display="flex";
+	document.getElementById("photos-container").style.position="absolute";
+	document.getElementById("lightbox").style.backdropFilter="saturate(150%) blur(10px)";
+	document.getElementById("lightbox-buttons").style.display="flex"; 
 	document.getElementById("nav").style.marginTop = "-75px";
+	document.getElementById("body").style.overflow = "hidden";
+	
 	if (parseInt(document.documentElement.clientWidth) <= 801) {
 		
 		document.getElementById("right").setAttribute("onclick","nextImage(1);");
@@ -34,10 +37,13 @@ function lightboxMainImage(img){
 }
 
 function closeLightbox(){
+	document.getElementById("body").style.overflow = "visible";
+	document.getElementById("lightbox").style.backdropFilter="saturate(0%) blur(0px)";
 	document.getElementById("lightbox-buttons").style.display="none";
 	document.getElementById("lightbox").style.display="none";
 	document.getElementById("photos-container").style.display="flex";
 	document.getElementById("nav").style.marginTop = "0px";
+	
 }
 
 function fadeIn(){
