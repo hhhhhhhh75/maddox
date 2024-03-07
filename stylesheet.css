@@ -1,5 +1,3 @@
-
-
 body{
 	margin:0;
 	background-color:#302c2c;
@@ -40,6 +38,10 @@ h1 {
 p{
 	font-size:21px;
 	font-family:Arial;
+}
+
+.photos-column img:hover {
+	cursor:pointer;
 }
 
 .contact-info-wrapper {
@@ -242,6 +244,7 @@ body {
 }
 
 #lightbox-image{
+	
 	max-height:100%;
 	width:100%;
 	height:auto;
@@ -251,6 +254,7 @@ body {
 }
 
 #lightbox {
+	z-index:2;
 	height:calc(100vh);
 	position:fixed;
 	top:0;
@@ -300,6 +304,8 @@ li {
 	padding-left:25px;
 	color:white;
 }	
+
+
 #x {
 	margin-top:0px;
 }
@@ -386,7 +392,7 @@ font-size:26px;
 	display:flex;
 	align-items:center;
 	justify-content:center;
-
+	z-index:2;
 
 }
 
@@ -554,8 +560,10 @@ align-items:center;
 box-shadow: none;
 }
 
-.lightbox-button:active, .lightbox-button:focus {
-	background-color:rgba(0,0,0,0);
+
+
+.lightbox-button:hover {
+	cursor:pointer;
 }
 
 
