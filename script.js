@@ -24,7 +24,6 @@ function lightboxMainImage(img){
 	document.getElementById("photos-container").style.position="absolute";
 	document.getElementById("lightbox").style.backdropFilter="saturate(150%) blur(10px)";
 	document.getElementById("lightbox").style['-webkit-backdrop-filter'] = "saturate(150%) blur(10px)";
-	
 	document.getElementById("lightbox-buttons").style.display="flex"; 
 	document.getElementById("nav").style.marginTop = "-75px";
 	document.getElementById("body").style.overflow = "hidden";
