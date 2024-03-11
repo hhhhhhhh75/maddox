@@ -11,7 +11,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
-<body onload="lazyLoadPhotos();" onwheel="hideNav(event);lazyLoadPhotos();" id="body">
+<body onload="lazyLoadPhotos();" ontouchmove="hideNav(event)" onwheel="hideNav(event);lazyLoadPhotos();" id="body">
 <script src="script.js">
 
 </script>
@@ -39,6 +39,7 @@
 	<!-- <ul id="totalList"> -->
 		<div class="photos-column">
 			<!--<li>--><!--</li>-->
+						<img onclick="lightboxMainImage(this)" id="transition-image" class="photos" src="2G5A1508.jpg" >
 						<img onclick="lightboxMainImage(this)" id="transition-image" class="photos" src="2G5A0026.jpg"><!--</li>-->
 			<!--<li>--><img onclick="lightboxMainImage(this)"  id="transition-image" class="photos" src="2G5A0032.jpg"><!--</li>-->
 					   <img onclick="lightboxMainImage(this)"  id="transition-image" class="photos" src="2G5A0150.jpg" >
@@ -47,7 +48,7 @@
 					   <img onclick="lightboxMainImage(this)"  id="transition-image" class="photos" src="2G5A0663.jpg" >
 					   <img onclick="lightboxMainImage(this)"  id="transition-image" class="photos" src="2G5A1425.jpg" >
 					   <img onclick="lightboxMainImage(this)"  id="transition-image" class="photos" src="13EA1859-966E-487C-AD48-B4A24324265E.jpg" >
-						<img onclick="lightboxMainImage(this)" id="transition-image" class="photos" src="2G5A1508.jpg" >
+						
 						<img onclick="lightboxMainImage(this)" id="transition-image" class="photos" src="2G5A2243.jpg" >
 						<img onclick="lightboxMainImage(this)" id="transition-image" class="photos" src="2G5A2368.jpg" >
 						<img onclick="lightboxMainImage(this)" id="transition-image" class="photos" src="2G5A2229.jpg">

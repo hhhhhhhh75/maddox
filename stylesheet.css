@@ -235,9 +235,6 @@ p {
 	
 }
 .about-wrapper {
-	
-	padding-top:60px;
-	height:calc(100vh - 60px);
 }
 
 
@@ -350,12 +347,14 @@ height: calc(100vh - 60px);
 	display:none;
 }
 .about-wrapper img {
-	width:100%;
-	margin:0;
+	display:none;
 
 }
 
-
+.about-image {
+	padding-top:60px;
+	
+}
 }
 
 @media only screen and (min-width: 801px){
@@ -363,7 +362,7 @@ height: calc(100vh - 60px);
 	width:1075px; 
 	margin:75px 75px 0px 0px;
 	height:100%;
-	transform: scale(0);
+
 
 }
 

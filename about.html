@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body onload="fadeIn();">
+<body onload="loadMainPhotos();">
 
 <nav id="nav">
 	<a id="logo" style="padding:0;margin:25px;display:flex;justify-content:center;" href="index.html"><p>Maddox Sawatzky</p></a>
@@ -32,12 +32,19 @@
 <div id="main-content">
 </div>
 
+<div class="about-cotainer">
+<div class="about-image">
+<img src="about.jpg" class="mobile-contact" id="transition-image">
+</div>
+
 <div class="about-wrapper">
 	<div class="about-text" style="">
 		<h1>Maddox Sawatzky</h1>
 		<p>Born in Egypt and raised in Abbotsford, British Columbia, Maddox has a unique perspective on the world and strives to capture it beautifully through his photography. His passion for capturing the beauty of the natural world has been evident since before he started his photography journey in March 2020, and he has since expanded his skills to include sports photography, videography and editing. Maddox is currently a student at Mennonite Educational Institute (MEI), where he is further developing his talents and exploring new opportunities. With his creative eye and passion for capturing the world around him, Maddox aspires to make a lasting impact in the fields of photography and film.</p>
 	</div>
-	<img id="transition-image"  class="transition-image" src="about.jpg">
+	<img id="transition-image" class="transition-image" src="about.jpg" >
+	<img id="transition-image" src="" style="display:none;">
+</div>
 </div>
 <script src="script.js">
 </script>
