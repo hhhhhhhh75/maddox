@@ -4,6 +4,7 @@ function toggleMenuOn(){
 	document.getElementById("logo").style.display="none";
 	document.getElementById("main-content").style.display="none";
 	document.getElementById("side-menu").style.backgroundColor="white";
+	document.getElementById("body").style.overflow = "hidden";
 }
 
 function toggleMenuOff(){
@@ -13,7 +14,7 @@ function toggleMenuOff(){
 	document.getElementById("main-content").style.display="flex";
 	document.getElementById("side-menu").style.backgroundColor="grey";
 	document.getElementById("main-menu").style.height="60px";
-	
+	document.getElementById("body").style.overflow = "visible";
 }
 
 function lightboxMainImage(img){
