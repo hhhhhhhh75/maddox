@@ -213,7 +213,9 @@ nav {
 }
 
 a {
-	font-size:3vh;
+	font-size:4vh;
+	padding:20px;
+	margin:0;
 }
 
 h2{
