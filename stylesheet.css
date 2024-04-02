@@ -157,8 +157,9 @@ nav p, a{
 
 .main-links {
 	color:white;
-	font-size:22px;
+	font-size:17px;
 	font-family:Arial;
+	margin:20px;
 }
 
 @media only screen and (max-width: 800px) {	
@@ -197,10 +198,11 @@ nav {
 	margin:0;
 }
 
-.logo img{
-	height:50px;
-	
+img.main-logo{
+	height:80px;
 }
+
+#logo {margin:0;}
 
 nav {
 	height:60px;
@@ -368,6 +370,9 @@ height: calc(100vh - 60px);
 
 }
 
+img.main-logo{
+	height:115px;
+}
 	
 
 .about-text{
@@ -492,6 +497,7 @@ font-size:26px;
 	position:relative;
     height:calc(100vh - 100px);
 	z-index:4;
+	
 }
 
 #totalList {
