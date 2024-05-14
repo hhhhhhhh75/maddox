@@ -362,10 +362,48 @@ li {
 }
 }
 
+@media only screen and (min-width: 1201px){
+	.about-wrapper img {
+		min-width:60%;
+		max-width:60%;
+	}
+	
+	.about-text {
+		margin-right:-75px;
+		padding:30px;
+	}
+	
+	.about-wrapper {
+		padding:70px;
+	}
+}
+
+@media only screen and (max-width: 1200px){
+	.about-text {
+		padding:30px;
+		min-width:500px;
+	}
+	.about-wrapper img {
+		padding-top:70px;
+		width:100%;
+		margin-left:0px;
+	}
+	
+	.about-wrapper {
+		padding:0px;
+		display:flex;
+		flex-direction:column-reverse;
+}
+
+.about-info h1{
+	font-size:20px;
+}
+}
+
 @media only screen and (min-width: 801px){
 	.about-wrapper img {
-	width:1075px; 
-	margin:75px 75px 0px 0px;
+	 
+
 	height:100%;
 
 
@@ -380,8 +418,8 @@ img.main-logo{
 
 	height:100%; 
 	background-color:white; 
-	margin:150px -75px 75px 75px; 
-	padding:60px;
+	
+
 	z-index:1;
 	
 }
