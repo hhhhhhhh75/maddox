@@ -106,7 +106,7 @@ function nextImage(val) {
 	let len = listItems.length;
 	const listImages = [];
 	let currentImage = document.getElementById("lightbox-image").src;
-	for (let i = 0; i < len; i++){
+	for (let i = 1; i < len; i++){
 		listImages.push(listItems[i].src);
 	}
 
