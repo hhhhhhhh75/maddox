@@ -323,12 +323,12 @@ li {
 }
 
 .contact-wrapper {
-height: calc(100vh - 60px);
+	height: calc(100vh - 60px);
 	padding-top:60px;
 	display:flex;
 	flex-direction:column;	
 	align-items:center;
-	
+	justify-content:center;
 }
 
 .contact-info {
@@ -345,6 +345,7 @@ height: calc(100vh - 60px);
 	margin:0;
 	width:100%;
 	height:100%;
+
 }
 
 .contact-images {
@@ -379,10 +380,14 @@ img.main-logo{
 
 	height:100%; 
 	background-color:white; 
-	margin:75px -75px 75px 75px; 
-	padding:50px;
+	margin:150px -75px 75px 75px; 
+	padding:60px;
 	z-index:1;
 	
+}
+
+.about-text p {
+	line-height:35px;
 }
 	
 	
@@ -398,6 +403,7 @@ img.main-logo{
 	display:flex;
 	flex-direction:row;	
 	align-items:center;
+	justify-content: center;
 }
 	
 .contact-images {

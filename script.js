@@ -23,8 +23,8 @@ function lightboxMainImage(img){
 	source.src=name;
 	document.getElementById("lightbox").style.display="flex";
 	document.getElementById("photos-container").style.position="absolute";
-	document.getElementById("lightbox").style.backdropFilter="saturate(10%) blur(10px)";
-	document.getElementById("lightbox").style['-webkit-backdrop-filter'] = "saturate(10%) blur(10px)";
+	document.getElementById("lightbox").style.backdropFilter="saturate(60%) blur(10px)";
+	document.getElementById("lightbox").style['-webkit-backdrop-filter'] = "saturate(60%) blur(10px)";
 	document.getElementById("lightbox-buttons").style.display="flex"; 
 	document.getElementById("nav").style.marginTop = "-75px";
 	document.getElementById("body").style.overflow = "hidden";
